@@ -3,9 +3,14 @@
 	<head>
 		<title>Lietuvos suzuki asiociacija</title>
 		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</head>
-	<body>
-		<div class="container">
+	<body >
+		<div class="container-fluid">
 			<header>
 				<div class="Pavadinimas">
 					<h1>Lietuvos suzuki asiociacija</h1>
@@ -13,20 +18,33 @@
 				<div>
 					<input type="text" placeholder="Paieska">
 				</div>
-			</header>
-			<nav>
 				<ul>
 					<li><button>Asociacija</button></li>
 					<li><button>Filosofija</button></li>
 					<li><button>Kontaktai</button></li>
 				</ul>
-				<ul>
-					<li><a href="#">Naujienos</a></li>
-					<li><a href="#">Veikla</a></li>
-					<li><a href="#">Stovyklos</a></li>
-					<li><a href="#">Mokytojai</a></li>
-					<li><a href="#">Straipsniai</a></li>
+			</header>
+
+			<nav class="container-fluid">
+				<div class="navbar navbar-expand-sm bg-light">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="#">Naujienos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Veikla</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Stovyklos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Mokytojai</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Straipsniai</a>
+					</li>
 				</ul>
+				</div>
 				<ul>
 					<li><a href="#">Naujienos01</a></li>
 					<li><a href="#">Naujienos02</a></li>
@@ -43,8 +61,10 @@
 					<li><button>Registruotis i rengini</button></li>
 				</ul>
 			</nav>
-			<main>
+			<main class="container-fluid">
 				<h1>Naujienos</h1>
+				<div class="row">
+					<div class="col-sm-6 col-md-6">
 				<article>
 					<h2>Pavadinimas1</h2>
 					<p>Tekstas tekstas tekstas</p>
@@ -55,6 +75,8 @@
 					<p>Tekstas tekstas tekstas</p>
 					<a href="#">Skaityti daugiau...</a>
 				</article>
+				</div>
+				<div class="col-sm-6 col-md-6">
 				<article>
 					<h2>Pavadinimas3</h2>
 					<p>Tekstas tekstas tekstas</p>
@@ -65,10 +87,13 @@
 					<p>Tekstas tekstas tekstas</p>
 					<a href="#">Skaityti daugiau...</a>
 				</article>
+					</div>
+				</div>
 			</main>
-			<aside>
+			<aside class="container-fluid row">
+				<div class="col-sm-12 col-md-12">
 				<h3>Nuotraukų galerija</h3>
-				<ul>
+				<ul class = "list-inline list-unstyled ">
 					<li><img src="img/01.png" alt="01"></li>
 					<li><img src="img/02.png" alt="02"></li>
 					<li><img src="img/03.png" alt="03"></li>
@@ -76,12 +101,16 @@
 					<li><img src="img/05.png" alt="05"></li>
 					<li><img src="img/06.png" alt="06"></li>
 				</ul>
+				</div>
+				<div class="col-sm-6 col-md-6">
 				<h4>Bendraukime</h4>
 				<ul>
 					<li><a href="#">03</a></li>
 					<li><a href="#">02</a></li>
 					<li><a href="#">01</a></li>
 				</ul>
+				</div>
+				<div class="col-sm-6 col-md-6">
 				<h5>Naudingos nuorodos</h5>
 				<ul>
 					<li><a href="#">Nuoroda01</a></li>
@@ -90,10 +119,11 @@
 					<li><a href="#">Nuoroda04</a></li>
 					<li><a href="#">Nuoroda05</a></li>
 				</ul>
+				</div>
 			</aside>
-			<footer>
-				<p>2015m. Lietuvos suzuki asociacija</p>
-				<p>Laisvės skg.6 <br> Kaunas LT-44210</p>
+			<footer class="row">
+				<p class="col-sm-6 col-md-6">2015m. Lietuvos suzuki asociacija</p>
+				<p class="col-sm-6 col-md-6">Laisvės skg.6 <br> Kaunas LT-44210</p>
 			</footer>
 		</div>
 	</body>
